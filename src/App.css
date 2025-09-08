@@ -63,12 +63,10 @@ body.dark{
 }
 
 @media (max-width:838px){
-   /* .SideBar{
-    display: none;
-    
-   } */
+   /* taskListMainDiv */
    .taskListMainDiv{
       width: 100%;
+      /* padding: 6px; */
    }
    .filterApplied{
     width: 50%;
@@ -76,5 +74,9 @@ body.dark{
    .filteroption{
     right: 5px ;
     top: 80px;
+   }
+   .mobileHeader{
+    flex-direction: column;
+    gap: 20px;
    }
 }

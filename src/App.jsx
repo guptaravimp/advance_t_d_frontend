@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div className='flex flex-row justify-between aligh-center'>
-      <div className={`${mobileMode ? "fixed top-0 h-full w-[40%]  z-50 transform transition-transform duration-300" : "w-[18%]"} 
+      <div className={`${mobileMode ? "fixed top-0 h-full w-[60%]  z-50 transform transition-transform duration-300" : "w-[18%]"} 
       ${sidebarOpen || !mobileMode ? "translate-x-0" : "-translate-x-full"}
       ${theme === 'light' ? "bg-[#f0f2f5]" : "bg-[#111111]"} `}>
         <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} mobileMode={mobileMode} setTodoData={setTodoData}/>

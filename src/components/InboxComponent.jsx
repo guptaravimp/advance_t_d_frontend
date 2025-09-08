@@ -73,7 +73,7 @@ function InboxComponent({ searchQuery, setSearchQuery ,todoData, setTodoData}) {
     console.log("Filter Data is ", FilterData)
     console.log("selectedCategories", selectedCategories);
     return (
-        <div className='w-[100%] p-8'>
+        <div className='w-[100%] p-4'>
             <Toaster position='top-right' />
             <div className='ml-4 w-[90%] flex flex-row  justify-between item-center taskListMainDiv'>
                 <div className=' ml-4 w-[60%] flex flex-row gap-4 justify-start item-center taskListMainDiv'>
