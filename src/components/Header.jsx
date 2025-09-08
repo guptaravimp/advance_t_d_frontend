@@ -13,7 +13,7 @@ function Header({ mobileMode, activeTab, setSidebarOpen, sidebarOpen, searchQuer
                 {mobileMode && !sidebarOpen && (
                     <div className='flex justify-center items-center'>
                         <button
-                            className="m-2  rounded-md  text-white z-50  cursor-pointer"
+                            className="m-2  rounded-md  text-white MenuIcon z-50  cursor-pointer"
                             onClick={() => setSidebarOpen(!sidebarOpen)}
                         >
                             <Menu size={25} />
