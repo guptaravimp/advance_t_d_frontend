@@ -62,7 +62,8 @@ function Sidebar({ activeTab, setActiveTab, sidebarOpen, setSidebarOpen,mobileMo
             <div className='flex flex-col justify-start items-start gap-4 p-6 w-[100%]'>
                 {
                     navigationItems.map((value) => (
-                        <button onClick={() => setActiveTab(value.label)} key={value.id} className={`${theme === 'light' ? "bg-[#f0f2f5] hover:bg-[#e4e4e7]" : " hover:bg-[#1a1a1a]"} flex justify-start ml-4 item-center gap-2  p-2 rounded-xl text-md w-full`}><span className=''>{value.icon}</span> <span> {value.label}</span></button>
+                        <button onClick={() => {setActiveTab(value.label)
+                            setSidebarOpen(false)}} key={value.id} className={`${theme === 'light' ? "bg-[#f0f2f5] hover:bg-[#e4e4e7]" : " hover:bg-[#1a1a1a]"} flex justify-start ml-4 item-center gap-2  p-2 rounded-xl text-md w-full`}><span className=''>{value.icon}</span> <span> {value.label}</span></button>
 
                     ))
                 }
