@@ -11,7 +11,7 @@ function Header({ mobileMode, activeTab, setSidebarOpen, sidebarOpen, searchQuer
         <div className='w-[95%] flex flex-row justify-between item-center p-2 mt-6 mobileHeader'>
             <div className='flex justify-between'>
                 {mobileMode && !sidebarOpen && (
-                    <div className='flex justify-center items-center'>
+                    <div className={`${theme=='light'?"text-black":"text-white"} flex justify-center items-center`}>
                         <button
                             className="m-2  rounded-md  text-white MenuIcon z-50  cursor-pointer"
                             onClick={() => setSidebarOpen(!sidebarOpen)}
