@@ -62,7 +62,7 @@ function EditTodosForm({ id, editMode, setEditMode, edittodoData }) {
     return (
         <div>
             <div className='fixed inset-0 z-50 flex  justify-center items-center   bg-opacity-50 w-[100%] '>
-                <div className={`${theme === 'light' ? "bg-[#f0f2f5]" : "bg-[#1a1a1a]"}  w-[40%]  p-4 rounded-xl  border-[2px]`}>
+                <div className={`${theme === 'light' ? "bg-[#f0f2f5]" : "bg-[#1a1a1a]"}  w-[40%] EditTodoS  p-4 rounded-xl  border-[2px]`}>
                     <div className='flex justify-center items-center text-xl font-semibold relative'>
                         <p>Add Your Todo</p><button className='ml-10 absolute right-1' onClick={() => setEditMode(!editMode)}>X</button>
                     </div>
