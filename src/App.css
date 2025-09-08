@@ -79,4 +79,7 @@ body.dark{
     flex-direction: column;
     gap: 20px;
    }
+  .EditTodoS{
+    width: 80%;
+   }
 }
