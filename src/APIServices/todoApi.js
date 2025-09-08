@@ -1,4 +1,4 @@
-const BACKEND_BASE_URL = import.meta.env.VITE_BASE_URL || "http://localhost:5000/api/v1"
+const BACKEND_BASE_URL = import.meta.env.VITE_BASE_URL || "https://advance-t-d-backend.vercel.app/api/v1" 
 import axios from "axios"
 export const getAllTodo = async () => {
     try {
