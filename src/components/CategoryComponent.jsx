@@ -49,7 +49,7 @@ function CategoryComponent({ activeTab }) {
       </div>
        {
         addingCategories&&(
-          <div className='p-4 rounded-xl border-2 z-50 w-[30%] flex flex-col justify-evenly gap-4 items-start pl-2'>
+          <div className='p-4 rounded-xl border-2 z-50 w-[30%] addCat flex flex-col justify-evenly gap-4 items-start pl-2'>
             <p className='flex justify-between w-full items-center p-4'><p>Add Your Categories</p> <button onClick={()=>setAddingCategories(false)}><span>X</span></button></p>
             <input type="text" className='p-2 ml-3 rounded-xl border-[2px] outline-none text-black' onChange={(e)=>setName(e.target.value)} placeholder='Write Category'/>
             <button onClick={handleAddCategories} className='p-2 ml-3 bg-green-600 w-[50%] text-white rounded-md'>Save</button>
