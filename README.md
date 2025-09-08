@@ -1,12 +1,34 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Local Setup
+### 1. Clone the repository
+```
+git clone https://github.com/guptaravimp/advance_t_d_frontend.git
+cd advance_t_d_frontend
 
-Currently, two official plugins are available:
+```
+### 2. Install dependencies
+```
+# Using npm
+npm install
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Or using Yarn
+yarn install
 
-## Expanding the ESLint configuration
+```
+### 3. change the backend Base url in .env 
+```
+VITE_BASE_URL="http://localhost:5000/api/v1"
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 4. add in API also may be some error so in (todoApi.js)
+
+```
+const BACKEND_BASE_URL = import.meta.env.VITE_BASE_URL || "http://localhost:5000/api/v1"
+
+```
+
+### 3. Start the development server
+```
+npm run dev
+```
